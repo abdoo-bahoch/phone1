@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(10, 10, 10),rgba(28, 27, 27, 0.667));
+}
+
+
+.container{
+
+    display: flex;
+
+    flex-direction: column;
+
+
+    justify-content: center;
+}
+
+ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin-right:20px ;
+    
+}
+
+ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header{
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+header img{
+ width: 40px;
+ margin-left: 10px;
+
+ mix-blend-mode: soft-light;
+}
+
+ul li a:hover ,.colo{
+
+    color: rgba(255, 166, 0, 0.863);
+
+    border-radius: 30px;
+
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.915);
+}
+
+
+.text h2{
+
+    color: white;
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+
+.meddle{
+
+
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    transform: translateY(20px);
+}
+
+.text{
+
+    padding: 20px;
+
+    width: 50%;
+
+    
+}
+
+.apple{
+    width: 50%;
+    text-align: center;
+    
+    
+}
+
+.apple img{
+    
+    mix-blend-mode: soft-light;
+}
+
+
+
+
+
+.text p {
+
+    color :white;
+
+    font-size: 20px;
+
+    font-family: sans-serif;
+    line-height: 30px;
+}
+
+.text button{
+
+    padding: 10px;
+    border-radius: 20px;
+
+    font-size: 16px;
+
+    margin-top: 10px;
+
+}
+
+.text button:hover{
+
+    cursor: pointer;
+   background: rgba(128, 128, 128, 0.819);
+   color: rgba(255, 255, 255, 0.878);
+   
+
+}
+
+.images{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.images img{
+
+     width: 50px;
+}
+
+@media (min-width :992px ){
+
+ .text{
+
+    margin: 40px;
+ }
+    
+.text p {
+
+
+    font-size: 30px;
+
+    line-height: 40px;
+
+   
+}
+
+
+.text h2{
+
+    color: white;
+    
+    font-size: 32px;
+    letter-spacing: 3px;
+    
+
+}
+
+.text button{
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #2b2a2a00;
+
+    color: white;
+    font-size: 20px;
+
+    font-weight: 200;
+
+    margin-left: 20%;
+ }
+}
+
+
+@media (max-width :600px){
+
+    .meddle{
+       flex-direction: column;
+     
+         }
+         .text{
+
+            width: 100%;
+
+            text-align: center;
+         }
+
+         .text button{
+            margin-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background: #00000030;
+
+            color: white;
+            font-size: 20px;
+
+            font-weight: 200;
+         }
+
+         .apple{
+
+            width: 1000%;
+            margin-top: 0px;
+         }
+}
